@@ -1,14 +1,43 @@
 body {
-    background-color: #e2d3ac;
     margin: 0;
+    background-color: #b3967f;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10%;
+    gap: 2%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea el contenido al final */
+margin: 0% 20% 20% 20%;
+}
+
+.column:hover, .contact img:hover {
+    transform: scale(1.2); /* Agranda el ícono un 20% */
+    filter: brightness(1.2);
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}
+
+h2 {
+justify-content: center;
+    max-width: 100%;
 }
 
 header {
-    margin: 0;
+    padding: 2vw;
     display: flex;
     justify-content: center;
     background-color: #b3967f;
-    padding: 15px;
 }
 
 nav a {
@@ -25,48 +54,48 @@ nav a:hover {
 
 section {
     font-family: Arial, Helvetica, sans-serif;
-    color: #352727;
+    color:whitesmoke;
     text-align: center;
-    margin: 40px 50px;
-    padding: 170px;
-    background-color: #76676367;
-    opacity: 0.8;
-    border-radius: 10px;
-    box-shadow: 10px -10px 1.5px #887d709a;
+}
+
+.presentation {
+color: aliceblue;
+} 
+
+
+#aboutMe {
+    background-image: url(/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.98;
 }
 
 #contact {
-    padding: 20px;
-    margin: 55px 250px;
+    background-color: #693340;
+    padding: 2%;
 }
 
 #aboutMe h2 {
-    text-align: left;
-    margin: 20px 20px;
+    margin: 0% 30%;
+    padding: 3%;
+    font-size: 200%;
 }
 
-#contact h2 {
-    text-align: center;
-}
-
-hr {
-    height: 1px;
-    background-color: #e2d3ac88;
-}
 
 .contactInfo {
-    margin-bottom: 20px;
-    font-size: 1.2em;
+    margin-bottom: 1%;
 }
 
 .contact {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1%;
     align-items: center;
 }
 
 .contact img {
-    width: 50px;
-    height: 50px;
+    max-width: 5vw; 
+    max-height: 5vw; 
 }
+
