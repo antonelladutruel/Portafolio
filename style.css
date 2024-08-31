@@ -6,8 +6,6 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 10%;
-    gap: 2%;
 }
 
 .column {
@@ -37,11 +35,11 @@ header {
     padding: 2vw;
     display: flex;
     justify-content: center;
-    background-color: #b3967f;
+    background-color: #966c7a;
 }
 
 nav a {
-    color: #e2d3ac;
+    color: #ffffff;
     padding: 15px;
     text-decoration: none;
     font: 1em sans-serif;
@@ -49,7 +47,7 @@ nav a {
 }
 
 nav a:hover {
-    color: beige;
+    color: rgba(121, 48, 90, 0.342);
 }
 
 section {
