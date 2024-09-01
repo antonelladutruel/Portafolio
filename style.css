@@ -11,48 +11,58 @@ body {
 .column {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Alinea el contenido al final */
-margin: 0% 20% 20% 20%;
+    justify-content: flex-end; 
+ margin: 0% 20% 20% 20%;
 }
 
-.column:hover, .contact img:hover {
-    transform: scale(1.2); /* Agranda el ícono un 20% */
+.column:hover{
+    transform: scale(1.2); 
     filter: brightness(1.2);
 }
 
 @media (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    .container, .contactInfo {
+        grid-template-columns: 1fr; 
     }
 }
 
 h2 {
 justify-content: center;
     max-width: 100%;
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
 }
 
 header {
     padding: 2vw;
     display: flex;
     justify-content: center;
-    background-color: #966c7a;
+    background: linear-gradient(#a772829d, #733C4A);
 }
 
 nav a {
     color: #ffffff;
     padding: 15px;
     text-decoration: none;
-    font: 1em sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: rgba(121, 48, 90, 0.342);
+text-shadow: 2px 2px 3px #bebcbc93;
 }
 
 section {
-    font-family: Arial, Helvetica, sans-serif;
-    color:whitesmoke;
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 183;
+      font-style: normal;
+          color:whitesmoke;
     text-align: center;
 }
 
@@ -66,18 +76,35 @@ color: aliceblue;
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
-    opacity: 0.98;
+    opacity: 0.85;
+}
+
+.about {
+    margin: 2% 20%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.about a{
+    color: #ffffff;
+}
+
+.img {
+    width: 5vh;
+    filter: invert(100%);
+    margin: 0% 50%;
+}
+
+#aboutMe h2 {
+    margin: 0% 20% 5% 20%;
+    text-align: left;
+    padding: 3%;
+    font-size: 200%;
 }
 
 #contact {
     background-color: #693340;
     padding: 2%;
-}
-
-#aboutMe h2 {
-    margin: 0% 30%;
-    padding: 3%;
-    font-size: 200%;
 }
 
 
@@ -93,7 +120,14 @@ color: aliceblue;
 }
 
 .contact img {
-    max-width: 5vw; 
-    max-height: 5vw; 
+max-width: 4vw;
+    filter: invert(100%);
 }
+
+.contact img:hover {
+    transform: scale(1.2); 
+    filter: brightness(1.2);
+    filter: invert(100%);
+}
+
 
