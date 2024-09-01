@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: #b3967f;
 }
 
 .container {
@@ -103,7 +102,7 @@ color: aliceblue;
 }
 
 #contact {
-    background-color: #693340;
+    background: linear-gradient(#733C4A, #684c559d);
     padding: 2%;
 }
 
