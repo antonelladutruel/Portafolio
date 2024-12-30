@@ -1,50 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonella Dutruel - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=News+Cycle&family=Oswald:wght@200&family=Outfit:wght@183&family=Yellowtail&display=swap" rel="stylesheet">
-    
-<title>PORTAFOLIO</title>
 </head>
-<body class="responsive">
-    <header>
-        <nav>
-            <a href="index.html">INICIO</a>
-            <a href="#aboutMe">SOBRE MÍ</a>
-            <a href="#contact">CONTACTO</a>
-        </nav>
-    </header>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-link">INICIO</a>
+            <a href="#sobre-mi" class="nav-link">SOBRE MÍ</a>
+            <a href="#contacto" class="nav-link">CONTACTO</a>
+            <a href="#proyectos" class="nav-link">PROYECTOS</a>
+        </div>
+    </nav>
 
-    <section id="aboutMe">
-        <h2>Antonella Dutruel</h2>
+    <section id="inicio" class="hero">
+        <div class="wave-container">
+            <canvas id="waveCanvas"></canvas>
+        </div>
+        <div class="hero-content fade-in">
+            <h1>Antonella Dutruel</h1>
+            <p>Desarrolladora Web</p>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
         <div class="container">
-            <div class="column">
-            <img class="img" src="/user_person_profile_avatar_icon_190943.png">
-                <h1 class="presentation">Sobre mí</h1>
-                <p class="about">Tengo 23 años</p>
-                <p class="about">Actualmente resido en <a href="https://g.co/kgs/qz93ewz" target="_blank">San José de Mayo</a> </p>
-            </div>
-            <div class="column">
-                <img class="img" src="/university_4593.png">
-                <h1 class="presentation">Formación</h1>
-                <p class="about">Actualmente cursando Jóvenes a Programar y Licenciatura en Nutrición</p>
+            <div class="about-grid">
+                <div class="about-content scroll-fade">
+                    <h2>Sobre Mí</h2>
+                    <div class="about-text">
+                        <p>Tengo 23 años</p>
+                        <p>Actualmente resido en <a href="https://g.co/kgs/qz93ewz" target="_blank">San José de Mayo</a></p>
+                    </div>
+                </div>
+                <div class="about-card scroll-fade">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <h3>Formación</h3>
+                        <ul class="formation-list">
+                            <li>
+                                <span class="dot cyan"></span>
+                                <span>Jóvenes a Programar - Desarrollo Web</span>
+                            </li>
+                            <li>
+                                <span class="dot pink"></span>
+                                <span>Licenciatura en Nutrición</span>
+                            </li>
+                            <li>
+                                <span class="dot green"></span>
+                                <span>Atención al cliente</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     
-    <section id="contact">
-        <div>
-            <h2>Contacto</h2>
-            <p class="contactInfo">Encontrame en redes sociales</p>
-            <div class="contact">
-                <a href="https://uy.linkedin.com/in/%F0%9D%97%94%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%BC%F0%9D%97%BB%F0%9D%97%B2%F0%9D%97%B9%F0%9D%97%B9%F0%9D%97%AE-%F0%9D%97%97%F0%9D%98%82%F0%9D%98%81%F0%9D%97%BF%F0%9D%98%82%F0%9D%97%B2%F0%9D%97%B9-a92096290?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank"><img src="linkedin.png" alt="linkedin"></a>
-                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img src="whatsapp.png" alt="whatsapp"></a>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content scroll-fade">
+                <h2>Contacto</h2>
+                <p>Encontrame en redes sociales</p>
+                <div class="social-links">
+                    <a href="https://uy.linkedin.com/" target="_blank" class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:contact@example.com" class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
